@@ -3,9 +3,10 @@
   padding:0;
   box-sizing: border-box;
   color: white;
+  background-color: black;
 }
 
-#mainContainer{
+body, html, #mainContainer{
   display: flex;
   background-color: black;
   overflow-x: hidden;
