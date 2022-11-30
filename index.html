@@ -6,12 +6,81 @@
     <link rel="stylesheet" href="style.css">
     <title>Portfolio</title>
   </head>
+    <!--Hi, I'm Rhi! This website is to be used as a portfolio for my work.-->
   <body>
     <div id="homePage">
       <div id="mainContainer">
+
+        <!--Below is a navigation bar with a home page(index), a work page, and an about page.-->
+        <nav class="navBar">
+          <ul>
+            <a class="navLink active" href= "index.html">Home</a>
+            <a class="navLink fade-up" href = "work.html">Work</a>
+            <a class="navLink fade-up" href = "about.html">About</a>
+          </ul>
+        </nav>
+
         <div id="headerSection">
-          <h1>Portfolio</h1>
-          <p1>This page is a work in progress.</p1>
+          <h1><a href="index.html">Rhi<span>.</span></a></h1>
+        </div>
+
+        <div id="introductionSection">
+          <div class="introBox">
+            <h2>Hey! I'm <span>Rhi</span>.</h2>
+            <br></br>
+            <p1>I'm a UX/UI designer focused on creating <span>accessible</span>, <span>fun</span>, and <span>thoughtful</span> experiences.</p1>
+          </div>
+        </div>
+
+        <div id="recentWorks">
+          <p1>Recent Works</p1>
+          <div class="grid-container">
+            <div class="itemComingSoon">
+              <img src="eclipseSoundscapesLogo.png" alt="Eclipse Soundscapes Logo">
+              <div class="itemDescription">
+                <H3>Eclipse Soundscapes</H3>
+                <p>Working with NASA's ARISA Lab to redesign the site's Field Researcher Training Page to be more accessible for those aged 55 and older.</p>
+                <br>
+              </div>
+              <a href="work.html"><button disabled>Coming Soon</button></a>
+            </div>
+            <div class="item">
+              <img src="goodreadsLogo.png" alt="Goodreads Logo">
+              <div class="itemDescription">
+                <H3>Goodreads</H3>
+                <p>Conducting research on the Goodreads community and reimagining the book page layout according to their wants and needs.</p>
+                <br>
+              </div>
+              <a href="work.html"><button>Read Case Study</button></a>
+            </div>
+            <div class="item">
+              <img src="keyboard.jpg" alt="Purple neon sign image of a keyboard">
+              <div class="itemDescription">
+                <h3>My Work</h3>
+                <p>I love to go on adventures, both big and small. This includes exploring different aspects of design. Come check out what I've tried! </p>
+                <br>
+              </div>
+              <a href="work.html"><button>View My Work</button></a>
+            </div>
+          </div>
+        </div>
+        <div id="footer">
+          <div id="footerText">
+            <p class="pageLinks">
+              <a href="index.html">Home</a> &middot;
+              <a href="work.html">Work</a> &middot;
+              <a href="about.html">About</a> &middot;
+              <a href="Super, Rhiannon Resume.pdf" target="_blank">Resume</a>
+            </p>
+            <br>
+            <p4>Rhiannon Super @ 2022</p4>
+          </div>
+          <div id="socialLinks">
+            <a href="mailto:Rhiannon.Super@Gmail.com" target="_blank"><img src="gmailLogo.png" alt"Gmail Logo"></a>
+            <a href="https://itzbosco.itch.io/" target="_blank"><img src="itchLogo.png" alt"Itch.io Logo"></a>
+            <a href="https://github.com/xxItzBoscoxx" target="_blank"><img src="githubLogo.png" alt"Github Logo"></a>
+            <a href="https://www.linkedin.com/in/rhiannon-super/" target="_blank"><img src="linkedinLogo.png" alt"LinkedIn Logo"></a>
+          </div>
         </div>
       </div>
     </div>

@@ -1,13 +1,329 @@
 *{
-  margin:10;
-  padding:10;
+  margin:0;
+  padding:0;
   box-sizing: border-box;
   color: white;
+}
+
+body, html, #homePage, #mainContainer{
+  height: 100%
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: block;
+  overflow-x: hidden;
+}
+
+html{
   background-color: black;
 }
 
-body, html, #mainContainer{
-  display: flex;
+#headerSection{
+  z-index: 1;
+  margin: 20px;
+  padding-top:5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: fixed;
+  text-align: center;
+}
+
+/*Initializes the navigation bar at top right of page.*/
+.navBar{
+  z-index: 1;
+  display: inline-flex;
+  justify-content: flex-end;
+  margin:0px;
+  padding:0px;
   background-color: black;
-  overflow-x: hidden;
+  overflow: hidden;
+  position: fixed;
+  top:0px;
+  width:100%;
+}
+
+.navBar ul{
+  display: inline-flex;
+  margin: 0px;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.navBar a{
+  display: inline-flex;
+  align-items: center;
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 20px;
+}
+.navBar a:hover{
+  display: inline-flex;
+}
+
+.navBar a.active{
+  display: inline-flex;
+  flex-direction: row;
+  align-items: flex-end;
+  color: white;
+}
+
+/*Adds an underline to active tab on navigation bar.*/
+.navLink{
+  font-weight: bold;
+  font-size: 14px;
+  text-decoration: none;
+  color: white;
+  padding: 10px 0px;
+  padding-right: 10px;
+  margin: 0px 10px;
+  display: inline-block;
+  position: relative;
+  opacity: .75;
+}
+
+.active{
+  opacity:1;
+}
+
+.active::before {
+  height: 4px;
+  content: "";
+  position: absolute;
+  background-color: #9553FF;
+  width: 88%;
+  bottom: 4px;
+  opacity: 1;
+}
+
+/*Adds a fade animation when hovering over inactive tabs.*/
+.fade-up:hover {
+  opacity: 1;
+}
+
+.fade-up::before {
+  transition: 300ms;
+  height: 4px;
+  content: "";
+  position: absolute;
+  background-color: #C39CFF;
+  width: 88%;
+  bottom: 0px;
+  opacity: 0;
+}
+
+.fade-up:hover::before {
+  bottom: 4px;
+  opacity: 1;
+}
+
+#introductionSection{
+  display: inline-flex;
+  width: 100%;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  padding-top: 200px;
+  padding-bottom: 100px;
+  background-image: url('bkgd.gif');
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.introBox{
+  width: 70vw;
+  height: auto;
+  padding: 5vw;
+  background-color: #60308B;
+  box-shadow: 10px 10px 10px #2A004F;
+  position: relative;
+  max-width: 800px;
+}
+
+#recentWorks{
+  padding: 40px;
+  position:relative;
+  background-color: #1F1529;
+  text-align: center;
+}
+
+#recentWorks > p1{
+  padding: 30px;
+  text-decoration: underline;
+  text-decoration-color: #C39CFF;
+  text-decoration-style: solid;
+  text-decoration-thickness: .75vw;
+  text-underline-offset: 10px;
+  text-align: center;
+}
+
+.grid-container{
+  display: grid;
+  grid-template-columns: minmax(auto, 1200px);
+  grid-template-rows: repeat(3, 20vw);
+  grid-gap: 6vw;
+  padding: 4vw;
+  justify-content: center;
+  align-content: center;
+  text-align: left;
+}
+
+.item{
+  position: relative;
+  display: flex;
+  background-color: #ECD7FF;
+  opacity: 1;
+  padding: 2vw;
+  border-radius: 25px;
+  box-shadow: 10px 10px 5px #CF9AFF;
+}
+
+.itemComingSoon{
+  position: relative;
+  display: flex;
+  background-color: #ECD7FF;
+  opacity: 1;
+  padding: 2vw;
+  border-radius: 25px;
+  box-shadow: 10px 10px 5px #CF9AFF;
+}
+
+.item > img{
+  border-radius: 25px;
+  box-shadow: 2px 2px 5px #2A004F;
+  width: 20vw;
+  height: 15vw;
+  max-width: 350px;
+  max-height: 300px;
+}
+
+.itemComingSoon > img{
+  border-radius: 25px;
+  box-shadow: 2px 2px 5px #2A004F;
+  width: 20vw;
+  height: 15vw;
+  max-width: 350px;
+  max-height: 300px;
+}
+
+.itemDescription{
+  display: block;
+  padding: 2vw;
+}
+
+.itemDescription > h3{
+  font-size: min(3vw, 40px);
+  color: black;
+}
+
+.itemDescription > p{
+  font-size: min(2vw, 30px);
+  color: black;
+  padding-right: 10vw;
+}
+button {
+  width: 15vw;
+  height: auto;
+  min-height: 5vw;
+  max-width: 200px;
+  background-color: #ECD7FF;
+  border-radius: 15px;
+  border-color: #9553FF;
+  border-width: thin;
+  color: black;
+  cursor:pointer;
+  position: absolute;
+  bottom: 10%;
+  left: 79%;
+  font-family: serif;
+  font-size: min(2vw,30px);
+}
+
+button:hover{
+  background-color: #350064;
+  color: white;
+}
+
+.itemComingSoon button{
+  background-color: #ECD7FF;
+  color: black;
+  cursor:not-allowed;
+}
+
+#footer{
+  width: 100%;
+  height: auto;
+  min-height: 2vw;
+  padding: 20px;
+  bottom:0;
+  text-align: center;
+  background-color: black;
+}
+
+#socialLinks{
+  float:right;
+  padding-bottom: 20px;
+  padding-right: 20px;
+}
+
+#socialLinks > a > img{
+  width: 5vw;
+  height: 5vw;
+  filter:grayscale();
+  border-radius: 50%;
+  max-width: 50px;
+  max-height: 50px;
+}
+
+#socialLinks > a > img:hover{
+  filter:none;
+}
+
+#footerText{
+  float:left;
+}
+
+#footerText > p{
+  float: left;
+}
+
+.pageLinks{
+  font-size: 20px;
+}
+
+.pageLinks > a:hover{
+    text-decoration: underline;
+}
+
+span{
+  color: #9553FF;
+}
+
+a{
+  text-decoration: none;
+}
+
+h2{
+  font-size: min(8vw, 100px);
+}
+
+h2 span{
+  color: #DCB4FF;
+  text-shadow: .2vw .2vw #360064;
+}
+
+p1{
+  font-size: min(4vw, 50px);
+}
+
+p1 span{
+  color: #DCB4FF;
+  text-shadow: .2vw .2vw #360064;
+  font-size: min(5vw, 60px);
+}
+
+p4{
+  opacity: 75%;
+  float: left;
 }
