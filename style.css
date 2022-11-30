@@ -316,6 +316,7 @@ button:hover{
   border-radius: 50%;
   border-color: #DCB4FF;
   border-width: thick;
+  transition: 300ms;
 }
 
 #bioPhoto > img:hover{
