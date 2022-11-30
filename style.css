@@ -18,6 +18,12 @@ html{
   background-color: black;
 }
 
+#mainContainer{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 #headerSection{
   z-index: 1;
   margin: 20px;
@@ -254,9 +260,8 @@ button:hover{
 #footer{
   width: 100%;
   height: auto;
-  min-height: 2vw;
   padding: 20px;
-  bottom:0;
+  margin-top: auto;
   text-align: center;
   background-color: black;
 }
@@ -278,6 +283,90 @@ button:hover{
 
 #socialLinks > a > img:hover{
   filter:none;
+}
+
+#aboutContentContainer{
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  padding-top: 150px;
+}
+
+#introToRhi{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+  align-items: flex-start;
+  text-align: justify;
+}
+
+#bioPhoto{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#bioPhoto > img{
+  width: 35vw;
+  filter: grayscale();
+  height: auto;
+  margin-left: 20px;
+  border-style: double;
+  border-radius: 50%;
+  border-color: #DCB4FF;
+  border-width: thick;
+}
+
+#bioPhoto > img:hover{
+  filter:none;
+}
+
+#bioPhoto > p:hover{
+  color: #DCB4FF;
+}
+
+#biography{
+  padding-right: 5vw;
+  text-align: justify;
+}
+
+#personalBio > p{
+  font-size: min(2vw, 30px);
+  color: white;
+}
+
+#casualBio{
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+#biography{
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+  background-color: #1F1529;
+}
+
+#casualBio > p1{
+  padding: 30px;
+  text-decoration: underline;
+  text-decoration-color: #C39CFF;
+  text-decoration-style: solid;
+  text-decoration-thickness: .75vw;
+  text-underline-offset: 10px;
+  text-align: center;
+}
+
+#casualBio > p{
+  font-size: min(2vw, 30px);
+  color: white;
+}
+
+#casualBio a:hover{
+  color: #DCB4FF;
+  text-decoration: underline;
 }
 
 #footerText{
@@ -308,7 +397,11 @@ h2{
   font-size: min(8vw, 100px);
 }
 
-h2 span{
+h3{
+  font-size: min(4vw, 50px);
+}
+
+h2 span, h3 span{
   color: #DCB4FF;
   text-shadow: .2vw .2vw #360064;
 }
@@ -326,4 +419,11 @@ p1 span{
 p4{
   opacity: 75%;
   float: left;
+}
+
+#casualBio span{
+  color: #DCB4FF;
+  font-weight:bold;
+  font-size: min(2vw, 30px);
+  text-decoration: underline;
 }
