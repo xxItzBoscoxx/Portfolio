@@ -122,6 +122,22 @@ html{
   opacity: 1;
 }
 
+#footerText{
+  float:left;
+}
+
+#footerText > p{
+  float: left;
+}
+
+.pageLinks{
+  font-size: 20px;
+}
+
+.pageLinks > a:hover{
+    text-decoration: underline;
+}
+
 #introductionSection{
   display: inline-flex;
   width: 100%;
@@ -316,20 +332,15 @@ button:hover{
   border-radius: 50%;
   border-color: #DCB4FF;
   border-width: thick;
-  transition: 300ms;
 }
 
 #bioPhoto > img:hover{
   filter:none;
+  transition: 300ms;
 }
 
 #bioPhoto > p:hover{
   color: #DCB4FF;
-}
-
-#biography{
-  padding-right: 5vw;
-  text-align: justify;
 }
 
 #personalBio > p{
@@ -348,6 +359,9 @@ button:hover{
   padding-right: 40px;
   padding-bottom: 40px;
   background-color: #1F1529;
+  text-align: justify;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 #casualBio > p1{
@@ -370,20 +384,216 @@ button:hover{
   text-decoration: underline;
 }
 
-#footerText{
-  float:left;
+#project{
+  display: flex;
+  flex-direction: column;
+  padding-top: 150px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
-#footerText > p{
-  float: left;
+#projectName{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
-.pageLinks{
-  font-size: 20px;
+#projectThumbnails{
+  width: 25%;
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  justify-content: space-around;
+  padding-top: 40px;
 }
 
-.pageLinks > a:hover{
-    text-decoration: underline;
+#projectThumbnails > img{
+  width: 20vw;
+  height: auto;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  padding-bottom: 40px;
+}
+
+#projectSectionHeader > p1{
+  padding: 30px;
+  text-decoration: underline;
+  text-decoration-color: #C39CFF;
+  text-decoration-style: solid;
+  text-decoration-thickness: .75vw;
+  text-underline-offset: 10px;
+  text-align: center;
+}
+
+#projectName > p, #projectOverview p, #projectOverviewDescription p, #projectOverviewDetails p, #projectDesignProcessResearch p, #projectDesignProcessResearch li, #projectDesignProcessCreating p, #projectDesignProcessCreating li, #projectDesignProcessBrainstorming p, #projectDesignProcessBrainstorming li, #projectNextSteps p, #projectReflection p{
+  font-size: min(2vw, 30px);
+  color: white;
+  text-align: justify;
+}
+
+#projectOverviewDetails p2, #projectNextSteps p2{
+  font-size: min(2vw, 30px);
+  color: #DCB4FF;
+}
+
+#projectOverview{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  padding-left: 20px;
+  width: 100%;
+  text-align: justify;
+  background-color: #1F1529;
+}
+
+#projectSectionHeader{
+  padding-bottom: 40px;
+}
+
+#projectOverviewContent{
+  display: flex;
+  flex-direction: row;
+}
+
+#projectOverviewDescription{
+  width: 75%;
+  padding: 20px;
+  padding-top: 0px;
+}
+
+#projectOverviewDetails{
+  width: 20%;
+  padding: 20px;
+  padding-top: 0px;
+  padding-bottom: 40px;
+  text-align: left;
+}
+
+#projectDesignProcess{
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+  align-items: center;
+}
+
+#projectDesignProcessThumbnail > img{
+  width: 100%;
+  height: auto;
+  padding-bottom: 40px;
+}
+
+#projectDesignProcessEmpathize, #projectDesignProcessDefineAndIdeate, #projectDesignProcessPrototypeAndTest{
+  background-color: #1F1529;
+  padding: 40px;
+  width: 100%;
+}
+
+#projectDesignProcessEmpathize h1, #projectDesignProcessDefineAndIdeate h1, #projectDesignProcessPrototypeAndTest h1{
+  text-align: center;
+  font-size: min(4vw, 70px);
+  color: #DCB4FF;
+  text-shadow: .2vw .2vw #360064;
+}
+
+#projectDesignProcessResearch p2, #projectDesignProcessBrainstorming p2, #projectDesignProcessCreating p2, #beforeAndAfterContentContainer p2{
+  font-size: min(3vw, 50px);
+  color: white;
+}
+
+#projectDesignProcessResearch > img, #projectDesignProcessBrainstorming > img, #projectDesignProcessCreating > img{
+  width: 100%;
+  height: auto;
+  text-align: justify;
+  padding-bottom: 20px;
+}
+
+#beforeAndAfterContentContainer{
+  width: 100%;
+  text-align: left;
+}
+
+#finalPrototype, #beforeAndAfter{
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+#reflectionContent{
+  display: flex;
+  flex-direction: row;
+}
+
+#reflectionAndNextSteps{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  padding-left: 20px;
+  width: 100%;
+  text-align: justify;
+  background-color: #1F1529;
+}
+
+#projectReflection{
+  width: 50%;
+  padding: 20px;
+  padding-top: 0px;
+}
+
+#projectNextSteps{
+  width: 40%;
+  padding-top: 0px;
+  padding-left: 40px;
+  padding-bottom: 40px;
+  text-align: justify;
+}
+
+#compare{
+  display: flex;
+  flex-direction: row;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#compareItem, #compareItem1{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+  justify-content: space-around;
+}
+
+#compareItem1{
+  margin: 0;
+}
+
+#compareItem > img{
+  width: 75%;
+  height: auto;
+  padding-bottom: 20px;
+}
+
+#compareItem1 > img{
+  width: 75%;
+  height: auto;
+  padding-bottom: 20px;
+}
+
+iframe{
+  width: 100%;
+  height: 50vw;
+  padding-bottom: 20px;
+}
+
+embed{
+  width: 100%;
+  height: 100vw;
+  padding-bottom: 20px;
 }
 
 span{
@@ -392,6 +602,16 @@ span{
 
 a{
   text-decoration: none;
+}
+
+ul{
+  list-style: none;
+}
+
+li::before {
+  content: "• ";
+  color: #DCB4FF;
+  padding: 20px;
 }
 
 h2{
