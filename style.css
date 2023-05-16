@@ -444,10 +444,16 @@ button:hover{
   text-align: center;
 }
 
-#projectName > p, #projectOverview p, #projectOverviewDescription p, #projectOverviewDetails p, #projectDesignProcessResearch p, #projectDesignProcessResearch li, #projectDesignProcessCreating p, #projectDesignProcessCreating li, #projectDesignProcessBrainstorming p, #projectDesignProcessBrainstorming li, #projectNextSteps p, #projectReflection p{
+#projectName > p, #projectOverview p, #projectOverviewDescription p, #projectDesignProcessResearch p, #projectDesignProcessResearch li, #projectDesignProcessCreating p, #projectDesignProcessCreating li, #projectDesignProcessBrainstorming p, #projectDesignProcessBrainstorming li, #projectNextSteps p, #projectReflection p{
   font-size: min(2vw, 30px);
   color: white;
   text-align: justify;
+}
+
+#projectOverviewDetails p{
+  font-size: min(2vw, 30px);
+  color: white;
+  text-align: left;
 }
 
 #projectOverviewDetails p2, #projectNextSteps p2{
