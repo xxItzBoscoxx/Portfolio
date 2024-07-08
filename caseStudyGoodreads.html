@@ -20,8 +20,20 @@
           </ul>
         </nav>
 
+        <nav class="sideNavBar">
+          <ul>
+            <a class="sideNavLink fade-up" href= "#projectOverview">Overview</a>
+            <a class="sideNavLink fade-up" href = "#projectDesignProcess">Process</a>
+            <a class="sideNavLink fade-up" href = "#projectDesignProcessEmpathize">Empathize</a>
+            <a class="sideNavLink fade-up" href="#projectDesignProcessDefineAndIdeate">Define</a>
+            <a class="sideNavLink fade-up" href="#projectDesignProcessPrototypeAndTest">Prototyping</a>
+            <a class="sideNavLink fade-up" href="#beforeAndAfter">Final Product</a>
+            <a class="sideNavLink fade-up" href="#reflectionAndNextSteps">Reflection</a>
+          </ul>
+        </nav>
+
         <div id="headerSection">
-          <h1><a href="index.html">Rhi<span>.</span></a></h1>
+          <h2><a href="index.html">Rhi<span>.</span></a></h2>
         </div>
         <div id="project">
           <div id="projectName">
@@ -35,17 +47,17 @@
           </div>
           <div id="projectOverview">
             <div id="projectSectionHeader">
-              <p1>Overview</p1>
+              <h3 class="underline">Overview</h3>
             </div>
             <div id="projectOverviewContent">
               <div id="projectOverviewDescription">
                 <p>Goodreads is the world’s largest site for readers and book recommendations. It was first launched in 2007 and has gained 125 million users as of 2022.</p>
                 <br>
-                <p>After researching users and personally using the Goodreads app on android to discover new books and read up on reviews, it was realized that the app was outdated and lacked accessibility for users with sensory processing disorders, trauma disorders, and screenreaders.</p>
+                <p>Despite being the largest site, the app has not been updated in some time, as shown through the outdated interface and lack of accessibility considerations for users with sensory processing disorders, trauma disorders, and screenreaders.</p>
                 <br>
-                <p>These issues were identified due to the presence of moving images close to text within comment sections, the lack of content warnings for books with common traumatic themes, and the lack of alternative text when it came to pictures, images, and icons.</p>
+                <p>These issues were identified due to the presence of moving images close to text within comment sections, the nonexistent content warnings for books with common traumatic themes, and the lack of alternative text when it came to pictures, images, and icons.</p>
                 <br>
-                <p>The goal of this redesign is to incorporate a preferences section within the settings to allow users to block specific content, authors, and tags; allow users to disable moving images; and incorporate a more accessible rating/review feature to assist in screenreader accessibility.</p>
+                <p>The goal of this research project is to understand the problem and redesign the interface to account for accessibility and allow users more control over the content they see.</p>
                 <br>
               </div>
               <div id="projectOverviewDetails">
@@ -65,16 +77,17 @@
           </div>
         <div id="projectDesignProcess">
           <div id="projectSectionHeader">
-            <p1>Design Process</p1>
+            <h3 class="underline">Design Process</h3>
           </div>
           <div id="projectDesignProcessThumbnail">
             <img src="designThinkingProcess.jpg" alt="Design Thinking Process Image" loading="lazy" width="100%" height="auto">
           </div>
+          <br></br>
           <div id="projectDesignProcessEmpathize">
             <h1>Empathize</h1>
             <br></br>
             <div id="projectDesignProcessResearch">
-              <p2>Research Goals</p2>
+              <h3 class="underline">Research Goals</h3>
               <br></br>
               <p>To better understand Goodreads's background, users, and uses, I started by conducting research with the following goals in mind:</p>
               <br>
@@ -85,14 +98,14 @@
                 <li>Discover goals, needs, and frustrations of readers using Goodreads</li>
               </ul>
               <br></br>
-              <p2>Competitive Analysis</p2>
+              <h3 class="underline">Competitive Analysis</h3>
               <br></br>
               <p>I analyzed Goodreads, along with it's top competitors to evaluate their strengths and weaknesses. This information helped me to understand the trends across all competitors, their unique features, and why users might choose a particular service over another.</p>
               <br></br>
               <img src="competitiveAnalysisGoodreads1.png" loading="lazy" width="100%" height="auto">
               <img src="competitiveAnalysisGoodreads2.png" loading="lazy" width="100%" height="auto">
               <br></br>
-              <p2>User Research</p2>
+              <h3 class="underline">User Research</h3>
               <br></br>
               <p>To gain an understanding of accessibility issues that are being encountered by Goodreads users, I conducted secondary research via TikTok videos, Reddit posts, and Quora discussions. The following are a summary of findings:</p>
               <br>
@@ -101,22 +114,25 @@
                 <li>Moving images (gifs) in reviews causes nausea and difficulty reading</li>
                 <li>App is always in light mode, which is hard to look at</li>
               </ul>
+              <br>
               <p>Screen Readers</p>
               <ul>
                 <li>Images and icons do not use alternative text and cannot be transcribed</li>
                 <li>Some icons and fonts were too small to find or click</li>
               </ul>
+              <br>
               <p>PTSD, CPTSD, and other trauma related issues</p>
               <ul>
                 <li>Lack of content or trigger warnings causes users to be blindsided when reading</li>
                 <li>Unable to guage genre potency, unsure how dark a book labelled 'dark' will be</li>
               </ul>
+              <br>
               <p>Dyslexia, and other learning disabilities</p>
               <ul>
                 <li>Goodreads librarian quiz does not allow extra time or accommodations to those in need</li>
               </ul>
               <br></br>
-              <p2>User Interviews</p2>
+              <h3 class="underline">User Interviews</h3>
               <br></br>
               <p>To learn about users' personal experiences with discovering books and Goodreads, I conducted user interviews. I interviewed 5 people between the ages of 18-25, for about 15-20 minutes each, asking open-ended questions to learn as much as possible about Goodreads's users and their experiences. These are the main takeaways from the interviews:</p>
               <br>
@@ -173,18 +189,18 @@
                 <li>Filter out spoilers in reviews</li>
               </ul>
               <br></br>
-              <p2>User Persona</p2>
+              <h3 class="underline">User Persona</h3>
               <br></br>
               <p>Using what was learned from both secondary research and interviews, a user persona was created to accurately represent who is being designed for. This persona and scenario helped guide my decisions along the design process to make sure the solution I am designing is centered on our user and their experiences. Without further ado, meet Amy:</p>
               <br></br>
               <img src="userPersonaGoodreads.png" loading="lazy" width="100%" height="auto">
               <br></br>
-              <p2>User Flows</p2>
+              <h3 class="underline">User Flows</h3>
               <br></br>
               <p>Using the data from interviews concerning most and least used features, along with observing users interact with app, a general user flow was put together to identify a limited number of possible paths a user can take. This user flow helps to visualize which interactions need to be focused on and reflected in a prototype. After laying out the interactions, it was concluded that working on the book page interactions (description, rating, reviews, stores, related) should be made a priority.</p>
               <br></br>
               <img src="userFlowGoodreads.png" loading="lazy" width="100%" height="auto">
-              <p2>User Journey Mapping</p2>
+              <h3 class="underline">User Journey Mapping</h3>
               <br></br>
               <p>With Amy's user persona in mind, and the insights gained from research, it was now possible to identify what the main problems are that need to be solved. Putting together the users' frustrations, wants, and needs, a user journey map was created to better understand the problem from the user’s perspective.</p>
               <br>
@@ -204,26 +220,27 @@
               <img src="userJourneyMapGoodreads.png" loading="lazy" width="100%" height="auto">
             </div>
           </div>
+          <br></br>
           <div id="projectDesignProcessDefineAndIdeate">
             <h1>Define and Ideate</h1>
             <br></br>
             <div id="projectDesignProcessBrainstorming">
-              <p2>Problem Statement</p2>
+              <h3 class="underline">Problem Statement</h3>
               <br></br>
               <p>The Goodreads App for Android is not accessible to those with senory processing disorders, ptsd, cptsd, other trauma disorders, or to those with screenreaders due to it's lack of customizability, content warnings, and layout.</p>
               <br></br>
-              <p2>Feature Prioritization</p2>
+              <h3 class="underline">Feature Prioritization</h3>
               <br></br>
               <p>After brainstorming different ways to achieve user needs and goals, a list of potential app features was created. By utilizing a 2x2 matrix, these features were sorted based on relevency and impact.</p>
               <br></br>
               <img src="featurePrioritizationGoodreads.png" loading="lazy" width="100%" height="auto">
               <br></br>
-              <p2>Application Map</p2>
+              <h3 class="underline">Application Map</h3>
               <br></br>
               <p>This application map aims to follow the reimagined Goodreads site using prioritized features at their most basic level (minimum viable for use). While creating the map, it was noted that the app had many branching and crossing pathways, which opened too many options for users to click on. This caused excess clutter on the application and difficulty for users. This map eliminated some of those routes in hopes of creating a better user experience.</p>
               <br></br>
               <img src="siteMapGoodreads.png" loading="lazy" width="100%" height="auto">
-              <p2>Lofi Wireframe Sketches</p2>
+              <h3 class="underline">Lofi Wireframe Sketches</h3>
               <br></br>
               <p>Putting together everything that was learned, I was able to create some low fidelity wireframe sketches which would allow me to visualize a final rendition and make informed decisions on how to design the different screens and features that would help our users fulfill their needs and meet their goals.</p>
               <br></br>
@@ -231,17 +248,18 @@
               <img src="wireframeSketchGoodreads2.jpg" loading="lazy" width="100%" height="auto">
             </div>
           </div>
+          <br></br>
           <div id="projectDesignProcessPrototypeAndTest">
             <h1>Prototype and Test</h1>
             <br></br>
             <div id="projectDesignProcessCreating">
-              <p2>High Fidelity Wireframes</p2>
+              <h3 class="underline">High Fidelity Wireframes</h3>
               <br></br>
               <p>The first set of high fidelity wireframes were created based on the wireframe sketches and attempted to incorporate early designs for the prioritized features. Below is the figma file displaying these wireframes with annotations.</p>
               <br></br>
               <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FUtjcHxfIfgF85tbBuY4dPu%2FWireframes%3Fnode-id%3D188%253A926%26t%3DXLfY2av0Xhxuas3R-1%26hide-ui=1" allowfullscreen></iframe>
               <br></br>
-              <p2>Usability Testing and Revisions</p2>
+              <h3 class="underline">Usability Testing and Revisions</h3>
               <br></br>
               <p>The first set of wireframes were then improved upon by cleaning up the interface, updating the color schemes and icons, and making the wireframes interactive for user testing. The updated set of wireframes are shown below:</p>
               <br></br>
@@ -271,59 +289,65 @@
               <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FUtjcHxfIfgF85tbBuY4dPu%2FWireframes%3Fnode-id%3D419%253A1011%26t%3DXLfY2av0Xhxuas3R-1" allowfullscreen></iframe>
             </div>
           </div>
+          <br></br>
           <div id="beforeAndAfter">
             <div id="projectSectionHeader">
               <br></br>
-              <p1>Comparison</p1>
+              <h1>Final Prototype</h1>
             </div>
             <div id="beforeAndAfterContentContainer">
               <div id="compare">
                 <div id="compareItem">
-                  <p2>Home Page</p2>
+                  <h3 class="underline">Home Page</h3>
                   <br>
                   <img src="homeCompare.jpg">
                 </div>
                 <div id="compareItem">
-                  <p2>Stores Page</p2>
+                  <h3 class="underline">Stores Page</h3>
                   <br>
                   <img src="storeCompare.jpg">
                 </div>
               </div>
               <div id="compare">
                 <div id="compareItem">
-                  <p2>Settings</p2>
+                  <h3 class="underline">Settings</h3>
                   <br>
                   <img src="settingsCompare.jpg">
                 </div>
                 <div id="compareItem">
-                  <p2>Search Results</p2>
+                  <h3 class="underline">Search Results</h3>
                   <br>
                   <img src="searchResultsCompare.jpg">
                 </div>
               </div>
               <div id="compare1">
                 <div id="compareItem1">
-                  <p2>Book Page</p2>
+                  <h3 class="underline">Book Page</h3>
                   <br>
                   <img src="bookPageCompare1.jpg">
                   <img src="bookPageCompare2.jpg">
                 </div>
               </div>
+              <h3 class="underline">Usable Prototype</h3>
+              <div id="mobilePrototype">
+                <embed style="border: 1px solid rgba(0, 0, 0, 0);" width="600" height="300" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FUtjcHxfIfgF85tbBuY4dPu%2FWireframes%3Fnode-id%3D419%253A97%26scaling%3Dscale-down%26page-id%3D0%253A1%26starting-point-node-id%3D419%253A97%26hide-ui%3D1" allowfullscreen></embed>
+              </div>
             </div>
           </div>
-          <div id="finalPrototype">
+          <!-- <div id="finalPrototype">
             <div id="projectSectionHeader">
               <br></br>
-              <p1>Final Prototype</p1>
+              <h3 class="underline">Final Prototype</h3>
             </div>
             <embed style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FUtjcHxfIfgF85tbBuY4dPu%2FWireframes%3Fnode-id%3D419%253A97%26scaling%3Dscale-down%26page-id%3D0%253A1%26starting-point-node-id%3D419%253A97%26hide-ui%3D1" allowfullscreen></embed>
             <br></br>
-          </div>
+          </div> -->
         </div>
+        <br></br>
         <div id="reflectionAndNextSteps">
           <div id="projectSectionHeader">
             <br></br>
-            <p1>Reflection and Next Steps</p1>
+            <h3 class="underline">Reflection and Next Steps</h3>
           </div>
           <div id="reflectionContent">
             <div id="projectReflection">
@@ -349,23 +373,31 @@
         </div>
       </div>
       </div>
-        <div id="footer">
-          <div id="footerText">
-            <p class="pageLinks">
-              <a href="index.html">Work</a> &middot;
-              <a href="about.html">About</a> &middot;
-              <a href="Super_Resume.pdf" target="_blank">Resume</a>
-            </p>
-            <br></br>
-            <p4>Rhiannon Super @ 2023</p4>
+      <div id="footer">
+        <div id="footerText">
+          <h3 class="pageLinks">
+            <a href="index.html">Work</a> &middot;
+            <a href="about.html">About</a> &middot;
+            <a href="Super_Resume.pdf" target="_blank">Resume</a>
+          </h3>
+          <br>
+          <p>Rhiannon Super @ 2024</p>
+        </div>
+        <div id="socialLinks">
+          <div id="link">
+            <a href="mailto:Rhiannon.Super@Gmail.com" target="_blank"><img src="gmailLogo.png" alt"Gmail Logo"><p4>Email</p4></a>
           </div>
-          <div id="socialLinks">
-            <a href="mailto:Rhiannon.Super@Gmail.com" target="_blank"><img src="gmailLogo.png" alt"Gmail Logo"></a>
-            <a href="https://itzbosco.itch.io/" target="_blank"><img src="itchLogo.png" alt"Itch.io Logo"></a>
-            <a href="https://github.com/xxItzBoscoxx" target="_blank"><img src="githubLogo.png" alt"Github Logo"></a>
-            <a href="https://www.linkedin.com/in/rhiannon-super/" target="_blank"><img src="linkedinLogo.png" alt"LinkedIn Logo"></a>
+          <div id="link">
+            <a href="https://itzbosco.itch.io/" target="_blank"><img src="itchLogo.png" alt"Itch.io Logo"><p4>Itch.io</p4></a>
+          </div>
+          <div id="link">
+            <a href="https://github.com/xxItzBoscoxx" target="_blank"><img src="githubLogo.png" alt"Github Logo"><p4>Github</p4></a>
+          </div>
+          <div id="link">
+            <a href="https://www.linkedin.com/in/rhiannon-super/" target="_blank"><img src="linkedinLogo.png" alt"LinkedIn Logo"><p4>LinkedIn</p4></a>
           </div>
         </div>
+      </div>
       </div>
     </div>
   </body>
